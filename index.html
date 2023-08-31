@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Passionate Software Engineer specializing in web development with Laravel and Yii2. Crafting user-friendly and visually appealing websites."
+    />
+    <meta
+      name="keywords"
+      content="Software Engineer, Laravel, Yii2, web development, SEO, web performance"
+    />
+    <title>MOHAMMED ALI - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="handwritten-font">MOHAMMED ALI</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <section id="intro" class="fade-in">
+        <h2>Hello, I'm MOHAMMED ALI</h2>
+        <br />
+        <p>
+          I'm a passionate Software Engineer located in Turkey. I specialize in
+          web development using technologies like Laravel and Yii2. I have
+          experience working with libraries like mpdf and AnyChart to create
+          dynamic and visually appealing web applications.
+        </p>
+        <p>
+          As a Software Engineer, I focus on optimizing web page performance and
+          implementing SEO best practices to ensure outstanding user
+          experiences.
+        </p>
+        <img src="mohammed-ali-photo.png" alt="MOHAMMED ALI Profile Image" />
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <br />
+        <p>
+          I'm enthusiastic about software development and enjoy crafting
+          user-friendly and visually appealing websites. I believe in the power
+          of collaboration and always look forward to working with others to
+          create amazing digital experiences.
+        </p>
+        <p>Outside of coding, I'm also interested in learning new languages.</p>
+        <h3>Projects</h3>
+        <ol>
+          <li>
+            Developed an e-commerce platform using Laravel to provide a seamless
+            shopping experience.
+          </li>
+          <li>
+            Integrated the AnyChart library to create interactive and data-rich
+            visualizations for a data analytics dashboard.
+          </li>
+          <li>
+            Implemented SEO strategies for a content-driven website, resulting
+            in increased organic traffic.
+          </li>
+          <li>
+            Utilized the mpdf library to generate dynamic PDF reports for a
+            financial application built on Yii2.
+          </li>
+        </ol>
+      </section>
+
+      <!-- Contact Me Section -->
+      <section id="contact" class="fade-in">
+        <h2>Contact Me</h2>
+        <br />
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/m-najem-ali">LinkedIn</a>
+          </li>
+          <li><a href="https://github.com/mohammedNali">GitHub</a></li>
+          <li><a href="mailto:mohammednjmali@gmail.com">Email</a></li>
+        </ul>
+      </section>
+
+      <!-- Blog Posts Section -->
+      <section id="blog" class="fade-in">
+        <h2>Blog</h2>
+        <br />
+        <ul>
+          <li>
+            <a href="#">Blog Post Title 1</a>
+
+            <p>
+              This is a sample content for Blog Post Title 1. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit.
+            </p>
+            <small>Published on August 31, 2023</small>
+          </li>
+          <li>
+            <a href="#">Blog Post Title 2</a>
+
+            <p>
+              This is a sample content for Blog Post Title 2. Sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <small>Published on August 30, 2023</small>
+          </li>
+        </ul>
+        <a href="#">View All Blog Posts</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>&copy; Made with ❤️ By MOHAMMED ALI</footer>
+
+    <script>
+      // JavaScript to trigger the fade-in animation
+      const sections = document.querySelectorAll(".fade-in");
+
+      const fadeIn = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+
+      const sectionObserver = new IntersectionObserver(fadeIn, {
+        root: null,
+        threshold: 0.3, // Adjust the threshold as needed
+      });
+
+      sections.forEach((section) => {
+        sectionObserver.observe(section);
+      });
+    </script>
+  </body>
+</html>
