@@ -58,8 +58,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-ul,
-ol {
+ul {
   list-style: none;
   margin-top: 10px;
 }
@@ -75,6 +74,7 @@ ol {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  height: auto;
 }
 
 h2 {
@@ -87,7 +87,7 @@ a {
 }
 
 ol {
-  list-style: disc;
+  list-style: decimal;
   margin-top: 10px;
 }
 
@@ -112,17 +112,6 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
-}
-
-.blog-post-info {
-  font-size: 14px;
-  color: #777;
-  margin-top: 5px;
-}
-
-.blog-post-date {
-  color: #333;
-  font-weight: bold;
 }
 
 .fade-in {
