@@ -59,8 +59,17 @@ nav ul li a:hover {
 }
 
 ul {
-  list-style: none;
-  margin-top: 10px;
+  list-style-type: none;
+}
+
+#contact ul {
+  list-style-type: disc; /* Use disc bullets */
+  padding-left: 30px !important; /* Remove default left padding for <ul> */
+}
+
+#contact ul li {
+  margin-left: 10px !important; /* Remove the default margin */
+  padding-left: 10px !important; /* Add padding to align text with the bullet */
 }
 
 #intro,
